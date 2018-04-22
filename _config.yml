@@ -4,10 +4,10 @@
 # Kiko-plus https://aweekj.github.io/Kiko-plus/ and Minima https://github.com/jekyll/minima
 
 # basic
-title: _drafts_framework
-description: A framework for notes, blogs etcetera based on the _drafts carpentry off EvanWill.
-keywords: framework, _drafts, EvanWill
-author: EvanWill
+title: framework-writings
+description: A framework for all kind of writings.
+keywords: framework, writings
+author: Kees
 github_username: Prudento-NL
 
 url: https://Prudento-NL.github.io
