@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+  <h2 class="post-title">{{ page.title }}</h2>
+  <span class="post-date">
+    <time>[last update: {{ page.date | date_to_string }}]</time>
+  </span>
+  <div class="post-tag">
+    <ul>
+      {% for tag in page.tags %}
+      <li>
+        <a href="{{ tag | prepend: "/tags#" | absolute_url }}"><span>{{ tag }}</span></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {{ content }}
+
+</div>

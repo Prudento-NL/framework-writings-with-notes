@@ -1,0 +1,16 @@
+<head>
+  <!-- meta data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} | {{ page.title }}</title>
+  <meta http-equiv="Content-Language" content="en-us" >
+  <meta name="author" content="{{ site.author }}" >
+  <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ", " }}{% else %}{{ site.keywords }}{% endif %}" >
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.png" | absolute_url }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | absolute_url }}" type="text/css">
+</head>

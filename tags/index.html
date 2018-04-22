@@ -1,0 +1,49 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+<p>All _drafts notes sorted by tag:</p>
+
+{% assign site_tags = "" | split: "," %}
+{% for note in site.notes %}
+  {% for t in note.tags %}
+    {% if t != "samplepost" %}
+      {% assign site_tags = site_tags | push: t %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_tags = site_tags | uniq | sort %}
+
+<div class="tag-index">
+  <ul>
+  {% for tag in unique_tags %}
+    <li><a href="#{{ tag }}">
+      <span>{{ tag }}</span> 
+      {% assign count = "" | split: "," %}
+      {% for st in site_tags %}
+        {% if st == tag %}
+          {% assign count = count | push: st %}
+        {% endif %}
+      {% endfor %}
+      <span class="count">{{ count.size }}</span>
+    </a></li>
+  {% endfor %}
+  </ul>
+</div>
+
+{% for item in unique_tags %}
+<div class="tag-title" id="{{ item }}">
+  {{ item }}
+</div>
+<ul>
+  {% for note in site.notes %}
+    {% for nt in note.tags %}
+      {% if nt == item %}
+      <li class="tag-post"><a href="{{ note.url | absolute_url }}"><span class="tag-post-title">{{ note.title }}</span><span class="date archive-list-post-date"> | <time>{{ note.date | date: "%Y-%m-%d" }}</time></span></a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+{% endfor %}

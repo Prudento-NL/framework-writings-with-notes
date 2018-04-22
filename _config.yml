@@ -11,7 +11,7 @@ author: EvanWill
 github_username: Prudento-NL
 
 url: https://Prudento-NL.github.io
-baseurl: /_drafts_framework
+baseurl: /framework-writings
 
 # build
 collections:
