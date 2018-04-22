@@ -1,7 +1,4 @@
-# _drafts
+Framework for all kinds of writings like notes, blogs, snippets, recipes, etcetera.
+The writings can be are searchable.
 
-digital rough frame carpentry, a blog of snippets and notes to get things started.
-
-https://evanwill.github.io/_drafts
-
-cc-by-sa Evan Will 2017
+Inspired by the \_drafts of Evan Will https://evanwill.github.io/_drafts.
