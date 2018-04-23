@@ -3,7 +3,8 @@ layout: page
 title: Google Search
 ---
 
-**_Attentie:_** Custom Search Engine is een gratis service aangeboden door Google.  
+**_Attentie:_**  
+Custom Search Engine is een gratis service van Google.  
 De resultaten zijn afhankelijk van indexering door een derde partij.
 
 <script>
