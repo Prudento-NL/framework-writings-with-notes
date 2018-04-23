@@ -4,7 +4,7 @@ title: Tags
 permalink: /tags/
 ---
 
-<p>All _drafts notes sorted by tag:</p>
+<p>Sortering op tags:</p>
 
 {% assign site_tags = "" | split: "," %}
 {% for note in site.notes %}
@@ -20,7 +20,7 @@ permalink: /tags/
   <ul>
   {% for tag in unique_tags %}
     <li><a href="#{{ tag }}">
-      <span>{{ tag }}</span> 
+      <span>{{ tag }}</span>
       {% assign count = "" | split: "," %}
       {% for st in site_tags %}
         {% if st == tag %}
