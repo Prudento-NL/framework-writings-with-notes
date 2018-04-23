@@ -5,7 +5,7 @@ layout: page
 
 Dit is een basis zoekfunctionaliteit gebaseerd op [Lunr.js](https://lunrjs.com/).  
 *Het kan even duren voordat het resultaat geladen is!*  
-(p.s. of probeer [google cse]({{ "/search/google.html" | absolute_url }}))
+Een alternatief is [google cse]({{ "/search/google.html" | absolute_url }}).
 
 <script src="{{ "/js/lunr.js" | absolute_url }}"></script>
 
