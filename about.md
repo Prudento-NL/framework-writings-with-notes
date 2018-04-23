@@ -6,8 +6,11 @@ De site [Prudento.nl] is voor persoonlijk gebruik, maar kan en mag door iedereen
 
 De site is een statische site die ontwikkeld is met behulp van [Jekyll]. Er wordt geen gebruik gemaakt van databases. Hiervoor zijn verschillende redenen aan te voeren zoals simpel onderhoud, betere performance en een hogere graad van veiligheid.
 
+De bron voor dit framework is [\_drafts van Evan Will].
+
 [Jekyll]: https://jekyllrb.com/
 [Prudento.nl]: http://www.prudento.nl/
+[\_drafts van Evan Will]: https://github.com/evanwill/_drafts
 
 <br>
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
