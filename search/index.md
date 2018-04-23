@@ -3,9 +3,9 @@ title: Site Search
 layout: page
 ---
 
-Basic search of *_drafts* notes full text using [Lunr.js](https://lunrjs.com/).
-*May take a second to load!* 
-(p.s. or you can try [google cse]({{ "/search/google.html" | absolute_url }}))
+Basis zoekfunctionaliteit gebaseerd op [Lunr.js](https://lunrjs.com/).
+*Het kan even duren voordat het resultaat geladen is!*
+(p.s. of probeer [google cse]({{ "/search/google.html" | absolute_url }}))
 
 <script src="{{ "/js/lunr.js" | absolute_url }}"></script>
 
@@ -14,11 +14,11 @@ Basic search of *_drafts* notes full text using [Lunr.js](https://lunrjs.com/).
 <p id="count"></p>
 <ul id="search-results"></ul>
 
-> Tips: search fields `title:foo` or `text:foo`, or use wildcards `foo*`.
+>Tip: zoek velden `title:foo` of `text:foo`, of gebruik wildcards `foo*`.
 
 <script>
 // create docs
-var notes = [ 
+var notes = [
     {% for post in site.notes %}
     {
       "url": {{ post.url | absolute_url | jsonify }},
