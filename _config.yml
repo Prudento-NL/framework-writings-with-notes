@@ -1,15 +1,9 @@
-# jekyll config
-# _drafts blog
-# theme partly based on:
-# Kiko-plus https://aweekj.github.io/Kiko-plus/ and Minima https://github.com/jekyll/minima
-
 # basic
 title: framework-writings
-description: A framework for all kind of writings.
+description: A framework for all kinds of writings.
 keywords: framework, writings
 author: Kees
 github_username: Prudento-NL
-
 url: https://Prudento-NL.github.io
 baseurl: /framework-writings
 
