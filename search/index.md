@@ -14,7 +14,7 @@ Een alternatief is [google cse]({{ "/search/google.html" | absolute_url }}).
 <p id="count"></p>
 <ul id="search-results"></ul>
 
->Tip: zoek velden `title:foo` of `text:foo`, of gebruik wildcards `foo*`.
+Tip: zoekargumenten `title:foo` of `text:foo`, of gebruik wildcards `foo*`.
 
 <script>
 // create docs
