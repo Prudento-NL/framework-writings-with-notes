@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "A Full and Comprehensive Style Test"
+title: A Full and Comprehensive Style Test
 tags: [test, style]
-comments: true
+date: 2018-04-26
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
