@@ -1,6 +1,6 @@
 ---
 layout: default
-title: browse
+title: Browse
 ---
 <h2 class="page-title">Browse:</h2>
 <div id="archiveList" class="archive-list">
@@ -15,12 +15,12 @@ title: browse
   <div class="listjs">
     {% for post in site.notes reversed %}
     <div class="archive-list-post">
-      <a href="{{ post.url | absolute_url }}">  
+      <a href="{{ post.url | absolute_url }}">
       <span class="title archive-list-post-title">
         {{ post.title }}
       </span>
-      <span class="date archive-list-post-date"> | 
-        <time>{{ post.date | date: "%Y-%m-%d" }}</time> | 
+      <span class="date archive-list-post-date"> |
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time> |
       </span>
       <span class="tags">{{ post.tags | join: ', ' }}</span>
       </a>
@@ -31,7 +31,7 @@ title: browse
 </div>
 <!-- add list.js http://www.listjs.com/ @javve -->
 <script src="{{ "/js/list.min.js" | absolute_url }}"></script>
-<script> 
+<script>
     var options = {
         valueNames: [ 'title', 'date', 'tags' ],
         listClass: 'listjs'
