@@ -1,6 +1,12 @@
 <header class="header">
   <h1 class="header-title">
-    <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+    {% if site.logo %}
+    <a href="{{ site.url }}/" class="site-logo"><img src="{{ site.logo }}" /></a>
+    {% endif %}
+    <div class="site-info">
+      <p class="site-name">{{ site.title }}</p>
+      <p class="site-description">{{ site.description }}</p>
+    </div>
   </h1>
   <nav class="header-nav">
     <a href="{{ "/about.html" | absolute_url }}">About</a>
@@ -8,5 +14,5 @@
     <a href="{{ "/search/index.html" | absolute_url }}">Search</a>
     <a href="http://www.prudento.nl">prudento.nl</a>
   </nav>
-<div style="clear:both"></div>
+  <div style="clear:both"></div>
 </header>

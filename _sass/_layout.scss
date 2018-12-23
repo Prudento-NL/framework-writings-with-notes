@@ -2,7 +2,6 @@
   max-width: 48rem;
   margin-left:  auto;
   margin-right: auto;
-  border-top: 3px solid $oc-gray-6;
   @media (max-width: 48rem){
     /*padding: 0 2rem 1.3rem;*/
   }
@@ -10,40 +9,72 @@
 
 /* Header */
 .header {
-  padding: 1rem 1rem 0 1rem;
-  border-bottom: 1px solid $oc-gray-6;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $oc-gray-2;
 }
+
 .header-title {
-    font-size: 50px;
-    line-height: 1.2em;
-    font-weight: 700;
-    border:none;
-    float:left;
-    padding: 0;
-    margin: .25rem 0;
-    a {
-      color: $base-color;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        background-color: $background-over-color;
-      }
+  font-size: 50px;
+  line-height: 1.2em;
+  border: none;
+  float: left;
+  padding: 0;
+  margin: 0.25rem 0;
+}
+
+.site-logo {
+  float: left;
+  width: 200px;
+  height: 70px;
+  margin-right: 25px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.site-info {
+  float: left;
+}
+
+.site-name {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+
+  a {
+    color: $oc-gray-9;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: $background-over-color;
     }
+  }
+}
+
+.site-description {
+  margin: -5px 0 0;
+  color: $oc-gray-7;
+  font-size: 16px;
+  font-weight: 100;
 }
 .header-nav {
-    float:right;
-    a {
+  float: right;
+  margin-top: 1.7rem; // @TODO: Vertically middle align
+  a {
+    color: $oc-gray-7;
+    margin-right: 0.3rem;
+    font-size: 20px;
+    &:focus,
+    &:hover {
       color: $oc-gray-7;
-      text-transform: lowercase;
-      margin-right: .3rem;
-      font-size: 20px;
-      &:hover,
-      &:focus {
-        color: $oc-gray-7;
-        text-decoration: none;
-        background-color: $background-over-color;
-      }
+      text-decoration: none;
+      background-color: $background-over-color;
     }
+  }
 }
 /* content */
 .content {
@@ -56,6 +87,7 @@
     font-size: 2.25em;
     line-height: 1.2em;
     font-weight: 600;
+    color: $oc-gray-8;
   }
 }
 .post {
@@ -65,6 +97,7 @@
     font-size: 2.25em;
     line-height: 1.2em;
     font-weight: 600;
+    color: $oc-gray-8;
   }
 
   &-date {
@@ -113,11 +146,11 @@
   }
 }
 
-/* 
+/*
 .list {
   &-post {
     padding: 4% 2%;
-    
+
     &:hover {
       background-color: $background-over-color;
       border-color: transparent;
@@ -308,9 +341,9 @@
   margin-top: 5px;
   &:focus {
     outline:none;
-  }  
+  }
 }
-.sort { 
+.sort {
   cursor: pointer;
   background-color: $background-color;
   border: solid 1px $text-color;

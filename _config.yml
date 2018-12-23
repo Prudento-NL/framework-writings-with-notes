@@ -1,12 +1,12 @@
 # basic
 title: framework-writings
-description: A framework for all kinds of writings.
+description: A framework for all kinds of writings
 keywords: framework, writings
 author: Kees
 github_username: Prudento-NL
-url: https://Prudento-NL.github.io
-baseurl: /framework-writings
-
+url: https://Prudento-NL.github.io #ToDo: Change URL when hosting from own domain
+# baseurl: /framework-writings #ToDo: how to deal with basurl and hosting from host
+logo: https://www.prudento.nl/assets/logo/logo_200x67_blue.png
 # build
 collections:
   notes:

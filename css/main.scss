@@ -1,12 +1,8 @@
 ---
 # full css
 ---
-@font-face {
-  font-family: 'Noto Sans';
-src:  url('NotoSans-Regular-webfont.woff') format('woff');
-}
-$base-font: 'Noto Sans', Verdana, Arial, sans-serif;
-$code-font: Menlo, Monaco, monospace;
+$base-font: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', 'Verdana', 'Arial', 'Dotum', sans-serif;
+$code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
 $base-font-size: 18px;
 $base-font-size-sm: 14px;
