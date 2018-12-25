@@ -8,11 +8,15 @@
       <p class="site-description">{{ site.description }}</p>
     </div>
   </h1>
-  <nav class="header-nav">
-    <a href="{{ "/about.html" | absolute_url }}">About</a>
-    <a href="{{ "/tags/index.html" | absolute_url }}">Tags</a>
-    <a href="{{ "/search/index.html" | absolute_url }}">Search</a>
-    <a href="http://www.prudento.nl">prudento.nl</a>
-  </nav>
-  <div style="clear:both"></div>
+  <nav>
+    <nav class="header-nav">
+      {% for nav in site.navigation %}
+      {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+      <a href="{{ nav.url }}">{{ nav.name }}</a>
+      {% else %}
+      <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+    <div style="clear:both"></div>
 </header>
